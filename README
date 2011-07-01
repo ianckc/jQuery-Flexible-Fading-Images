@@ -1,0 +1,48 @@
+jQuery plugin to fade between images and work with a responsive percentage based layout.
+
+HTML Setup
+
+The HTML structure needs to follow this format
+
+<div id="myGallery">
+	<ul>
+		<li><img src="image-1.jpg" width="800" height="600" /></li>
+		<li><img src="image-2.jpg" width="800" height="600" /></li>
+		<li><img src="image-3.jpg" width="800" height="600" /></li>
+	</ul>
+</div>
+
+Scripts
+
+After including jQuery you then need to include the flexible fading images script
+
+<script src=ÓflexibleFading.jQuery.jsÓ></script>
+
+Then to initialize the plugin pass the selector to it like so
+
+<script>
+
+$(document).ready(function(){
+
+$('#myGallery').flexibleFading();
+
+});
+
+</script>
+
+Options
+
+There are two options that can be overridden in the plugin.
+
+    Time between slides Ð this sets the time that a slide displays before beginning the transition to the next one
+    Transition time Ð the time it takes to transition between one slide and the next
+
+Setting options
+
+To set the options you can call the plugin with the following
+
+$('#myGallery').flexibleFading({timeBetweenSlide:4000, transitionTime:10000});
+
+Demo
+
+http://ianluckraft.co.uk/demonstrations/jquery-flexible-fading-images/
