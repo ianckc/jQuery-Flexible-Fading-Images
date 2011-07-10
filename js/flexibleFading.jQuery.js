@@ -28,11 +28,8 @@
 			$this.height($this.find('img:first-child').height());
 			
 			$this.find('img:first-child').load(function() {
-				//console.log('First child image loaded');
 				$this.height($this.find('img:first-child').height());
 			});
-			
-			//console.log($this.find('img:first-child').height());
 
 			// When the window resizes update the gallery height to match the li height
 			$(window).resize(function() {
